@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Facts about cats</title>
+</head>
+<body>
+    <div class="pagination-info">
+        <div>
+            Показывать по
+            <select name="per-page" id="per-page">
+                <option value="5">5</option>
+                <option value="10">10</option>
+                <option value="20">20</option>
+                <option value="100">100</option>
+            </select>
+            записей на странице
+        </div>
+        <div>
+            Показаны записи с <span class="starting-page"></span> 
+            по <span class="ending-page"></span> 
+            из <span class="amount-records"></span>
+        </div>
+
+    </div>
+    <div class="facts-list"></div>
+    <div class="pagination"></div>
+    <script src="main.js"></script>
+</body>
+</html>

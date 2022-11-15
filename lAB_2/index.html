@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <main>
+        <h1>Форма отбратной связи
+           <form method="POST" action="http://httpbin.org/post" enctype="multipart/form-data">
+                <input type="hidden" name="user_id" value="1"> 
+
+                <div>
+                    <label for="ФИО"></label>
+                    <input type="text" name="fio" id="fio" >
+                </div>
+
+                <div>
+                    <label for="Адрес электронной почты"></label>
+                    <input type="email" name="email" id="email" value="qq@gmail.com" required>
+                </div>
+
+                <fieldset>
+                    <legend>Откуда вы о нас узнали?</legend>
+                    <div>
+                        <input type="radio" id="friends" name="source" value="friends">
+                        <label for="friends">Рассказали друзья</label>
+                    </div>
+
+                    <div>
+                        <input type="radio" id="internet" name="source" value="internet">
+                        <label for="internet">Реклама в интернете</label>
+                    </div>
+                </fieldset>
+
+                <div>
+                    <label for="category">Категория обращения</label>
+                    <select name="category" id="category" multiple>
+                        <option value="1">Жалоба</option>
+                        <option value="2">Предлодение</option>
+                    </select>
+                </div>
+
+                <div>
+                    <label for="msg">Текст по умолчанию</label>
+                    <textarea name="msg" id="msg" cols="60" rows="20" placeholder="Введите текст"></textarea>
+                </div>
+
+                <div>
+                    <input type="checkbox" name="agreement" id="agreement" required> 
+                    <label for="agreement">Согласен с обработкой персональных данных</label> 
+                </div>
+
+                <div>
+                    <label for="attachment">Вложение</label>
+                    <input type="file" name="attachment" id="attachment">
+                </div>
+
+                <button type="submit">Отправить</button>
+            </form>
+        </h1>
+    </main>
+    
+</body>
+</html>
