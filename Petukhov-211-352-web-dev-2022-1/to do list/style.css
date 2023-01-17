@@ -1,0 +1,15 @@
+.actions i {
+    font-family: FontAwesome;
+}
+
+li:hover .actions{
+    display: block!important;
+}
+
+.data-to-do .fa-arrow-left{
+    display: none;
+}
+
+.data-done .fa-arrow-right{
+    display: none;
+}
